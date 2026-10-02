@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipos de marketing</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<section class="carrusel" aria-roledescription="carrusel" aria-label="Ejemplos de tipos de marketing">
+  <div class="carrusel__ventana">
+    <div class="carrusel__pista" id="pista"></div>
+  </div>
+
+  <nav class="carrusel__nav" aria-label="Navegación del carrusel">
+    <button class="flecha" type="button" data-paso="-1" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="puntos" id="puntos"></div>
+    <button class="flecha" type="button" data-paso="1" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </nav>
+
+  <p class="solo-lector" id="anuncio" aria-live="polite"></p>
+</section>
+
+<script src="contenido.js"></script>
+<script src="carrusel.js"></script>
+</body>
+</html>
